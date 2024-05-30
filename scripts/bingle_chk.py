@@ -42,7 +42,7 @@ sim.createInteractionGroup(
 #add a CheckPointer to save simulation data at regular intervals:
 sim.createCheckPointer (
     CheckPointPrms (
-        fileNamePrefix = "results/bingle_data",
+        fileNamePrefix = "cpt",
         beginTimeStep = 0,
         endTimeStep = 10000,
         timeStepIncr = 100
