@@ -19,16 +19,16 @@ This Docker container is configured to support applications that utilize the `es
 
 ## Usage
 
-To build and run this Docker container, ensure you have Docker installed on your system and follow these steps:
+To build and run this Docker container, ensure you have Docker installed on your system and follow these steps. You may need to use `sudo`:
 
 1. **Build the Docker Image**:
    ```bash
-   sudo docker build -t esys-particle .
+   docker build -t esys-particle .
    ```
 
 2. **Run the Container**:
    ```bash
-   sudo docker run -ti -e OMPI_ALLOW_RUN_AS_ROOT=1 -e OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1 -v ${PWD}:/usr/local/bin esys-particle
+   docker run -ti -e OMPI_ALLOW_RUN_AS_ROOT=1 -e OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1 -v ${PWD}:/simulation esys-particle
    ```
 
 Ensure that the `main/run.sh` script is properly configured to execute your specific simulation tasks. Modify the script as necessary to fit your project's requirements.

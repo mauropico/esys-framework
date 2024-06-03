@@ -1,7 +1,7 @@
 # docker build -t esys-particle .
-# docker run -ti -e OMPI_ALLOW_RUN_AS_ROOT=1 -e OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1 -v ${PWD}:/usr/local/bin esys-particle
+# docker run -ti -e OMPI_ALLOW_RUN_AS_ROOT=1 -e OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1 -v ${PWD}:/simulation esys-particle
 
-FROM muro230/esys-particle
+FROM muro230/custom-esys-particle-3:vainilla
 
 WORKDIR /usr/local/bin
 
