@@ -3,7 +3,7 @@
 
 FROM muro230/custom-esys-particle-3:vainilla
 
-WORKDIR /usr/local/bin
+WORKDIR /simulation
 
 RUN apt update && apt install python3-pip -y
 RUN pip install h5py
