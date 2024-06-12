@@ -4,7 +4,7 @@ from gengeo import *
 # - input parameters --
 # block dimensions
 xdim=1
-ydim=1.35
+ydim=1
 zdim=1
 
 # particle size range
@@ -41,9 +41,9 @@ box.addPlane(backPlane)
 
 # -- setup packer --
 # iteration parameters
-insertFails = 1500
-maxIter = 1500
-tol = 1.0e-6
+insertFails = 1000
+maxIter = 1000
+tol = 1.0e-4
 
 # packer
 packer = InsertGenerator3D(minRadius,maxRadius,insertFails,maxIter,tol,False)
