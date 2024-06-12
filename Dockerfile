@@ -9,9 +9,6 @@ FROM muro230/custom-esys-particle-3:vainilla
 # Uncomment for Windows execution
 #FROM muro230/custom-esys-particle-3-windows:vainilla
 
-# Uncomment only to use GenGeo. All OS.
-#FROM dweatherley/esys-particle-3:latest
-
 WORKDIR /simulation
 
 RUN apt update && apt install python3-pip -y

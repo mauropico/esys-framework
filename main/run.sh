@@ -12,3 +12,6 @@ export PYTHONPATH=/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3
 
 # Generate geometry using GenGeo library. 
 python scripts/generate_geometry.py
+
+# To navigate in the container (similar to ssh into the machine)
+bash

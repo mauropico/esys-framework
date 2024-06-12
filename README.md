@@ -23,7 +23,7 @@ To build and run this Docker container, ensure you have Docker installed on your
 
 1. **Build the Docker Image**:
    ```bash
-   docker build -t esys-particle .
+   docker build -t esys-particle . --no-cache
    ```
 
 2. **Run the Container**:
